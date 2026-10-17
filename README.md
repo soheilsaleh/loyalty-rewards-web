@@ -9,6 +9,16 @@ with a bearer token, exactly like a third-party client would.
 
 [![CI](https://github.com/soheilsaleh/loyalty-rewards-web/actions/workflows/ci.yml/badge.svg)](https://github.com/soheilsaleh/loyalty-rewards-web/actions/workflows/ci.yml)
 
+## Screenshots
+
+| Dashboard                        | Redeem a reward                   |
+| -------------------------------- | --------------------------------- |
+| ![Dashboard](docs/dashboard.png) | ![Redeem dialog](docs/redeem.png) |
+
+| Rewards                      | Points history               |
+| ---------------------------- | ---------------------------- |
+| ![Rewards](docs/rewards.png) | ![History](docs/history.png) |
+
 ## Demonstrates
 
 - **Auth** — Sanctum token login, session restore on reload, global 401 handling.
