@@ -1,0 +1,15 @@
+# Full-stack demo: run the Loyalty & Rewards API on the host at :8000
+# (see its repo), then `docker compose up --build` here and open :8080.
+# nginx proxies /api to the host so the SPA and API share an origin.
+services:
+  web:
+    build:
+      context: .
+      args:
+        VITE_API_URL: ''
+    image: loyalty-rewards-web
+    ports:
+      - '8080:80'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    restart: unless-stopped
